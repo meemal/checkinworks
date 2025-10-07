@@ -399,7 +399,7 @@ export default function Home() {
                 href="https://www.giraffe-trading.co.uk/referral-form"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-6 py-3 bg-white text-[#035AA6] border-2 border-white rounded-lg hover:bg-[#f0f0f0] hover:border-[#f0f0f0] transition-all duration-200 font-semibold shadow-md hover:shadow-lg"
+                className="inline-flex items-center justify-center px-6 py-3 bg-white text-gray-900 border-2 border-white rounded-lg hover:bg-gray-800 hover:text-white hover:border-gray-800 transition-all duration-200 font-semibold shadow-md hover:shadow-lg"
               >
                 Make a referral
               </a>
@@ -413,7 +413,7 @@ export default function Home() {
               </p>
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center px-6 py-3 bg-white text-[#A66D3C] border-2 border-white rounded-lg hover:bg-[#f0f0f0] hover:border-[#f0f0f0] transition-all duration-200 font-semibold shadow-md hover:shadow-lg"
+                className="inline-flex items-center justify-center px-6 py-3 bg-white text-gray-900 border-2 border-white rounded-lg hover:bg-gray-800 hover:text-white hover:border-gray-800 transition-all duration-200 font-semibold shadow-md hover:shadow-lg"
               >
                 Start a conversation
               </a>
@@ -427,7 +427,7 @@ export default function Home() {
               </p>
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center px-6 py-3 bg-white text-[#A62D37] border-2 border-white rounded-lg hover:bg-[#f0f0f0] hover:border-[#f0f0f0] transition-all duration-200 font-semibold shadow-md hover:shadow-lg"
+                className="inline-flex items-center justify-center px-6 py-3 bg-white text-gray-900 border-2 border-white rounded-lg hover:bg-gray-800 hover:text-white hover:border-gray-800 transition-all duration-200 font-semibold shadow-md hover:shadow-lg"
               >
                 Register interest
               </a>
