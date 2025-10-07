@@ -1,0 +1,8 @@
+# Redirect all paths to their corresponding HTML files
+/about              /about.html           200
+/programmes         /programmes.html      200
+/annual-reports     /annual-reports.html  200
+/contact            /contact.html         200
+/privacy            /privacy.html         200
+/accessibility      /accessibility.html   200
+/                   /index.html           200
