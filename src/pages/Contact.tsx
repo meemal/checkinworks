@@ -1,12 +1,7 @@
 import { useState } from 'react';
 import { MapPin, Phone, Mail, CheckCircle } from 'lucide-react';
-import Button from '../components/Button';
 
-interface ContactProps {
-  onNavigate: (path: string) => void;
-}
-
-export default function Contact({}: ContactProps) {
+export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState('');
@@ -168,9 +163,13 @@ export default function Contact({}: ContactProps) {
                   </label>
                 </div>
 
-                <Button type="submit" size="large" className="w-full" disabled={isSubmitting}>
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#A62D37] text-white rounded-lg hover:bg-[#8a2530] transition-all duration-200 font-semibold text-lg shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+                >
                   {isSubmitting ? 'Sending...' : 'Send message'}
-                </Button>
+                </button>
               </form>
               </>
             )}

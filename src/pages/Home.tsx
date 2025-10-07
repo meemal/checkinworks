@@ -1,9 +1,4 @@
 import { Users, Award, Heart, UserPlus, HandHeart } from 'lucide-react';
-import Button from '../components/Button';
-
-interface HomeProps {
-  onNavigate: (path: string) => void;
-}
 
 const supporters = [
   {
@@ -89,7 +84,7 @@ const partners = [
   }
 ];
 
-export default function Home({ onNavigate }: HomeProps) {
+export default function Home() {
   return (
     <div className="min-h-screen">
       <section className="relative text-white py-24 px-4 sm:px-6 lg:px-8 min-h-[600px] flex items-center">
@@ -114,9 +109,12 @@ export default function Home({ onNavigate }: HomeProps) {
               >
                 Make a referral
               </a>
-              <Button onClick={() => onNavigate('/annual-reports')} variant="tertiary" size="large">
+              <a
+                href="/annual-reports.html"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-gray-900 border-2 border-gray-300 rounded-lg hover:bg-gray-50 transition-all duration-200 font-semibold text-lg shadow-lg hover:shadow-xl"
+              >
                 Read our annual reports
-              </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -203,9 +201,12 @@ export default function Home({ onNavigate }: HomeProps) {
             </div>
           </div>
           <div className="text-center">
-            <Button onClick={() => onNavigate('/programmes')}>
+            <a
+              href="/programmes.html"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#035AA6] text-white rounded-lg hover:bg-[#024a8a] transition-colors font-semibold shadow-md hover:shadow-lg"
+            >
               Explore our programme
-            </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -315,9 +316,12 @@ export default function Home({ onNavigate }: HomeProps) {
               />
             </div>
           </div>
-          <Button onClick={() => onNavigate('/annual-reports')}>
+          <a
+            href="/annual-reports.html"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#035AA6] text-white rounded-lg hover:bg-[#024a8a] transition-colors font-semibold shadow-md hover:shadow-lg"
+          >
             See our latest report
-          </Button>
+          </a>
         </div>
       </section>
 
@@ -408,9 +412,12 @@ export default function Home({ onNavigate }: HomeProps) {
                 <p className="leading-relaxed mb-6">
                   Your funding helps people build confidence, learn new skills and move forward. We welcome conversations with trusts, foundations, businesses and individuals.
                 </p>
-                <Button onClick={() => onNavigate('/contact')} variant="tertiary">
+                <a
+                  href="/contact.html"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-white text-[#A66D3C] border-2 border-[#A66D3C] rounded-lg hover:bg-[#A66D3C] hover:text-white transition-all duration-200 font-semibold shadow-md hover:shadow-lg"
+                >
                   Start a conversation
-                </Button>
+                </a>
               </div>
             </div>
 
@@ -421,9 +428,12 @@ export default function Home({ onNavigate }: HomeProps) {
                 <p className="leading-relaxed mb-6">
                   We keep a small pool of volunteers for specific roles. If you would like to help, please share your interests and availability.
                 </p>
-                <Button onClick={() => onNavigate('/contact')} variant="tertiary">
+                <a
+                  href="/contact.html"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-white text-[#A62D37] border-2 border-[#A62D37] rounded-lg hover:bg-[#A62D37] hover:text-white transition-all duration-200 font-semibold shadow-md hover:shadow-lg"
+                >
                   Register interest
-                </Button>
+                </a>
               </div>
             </div>
           </div>

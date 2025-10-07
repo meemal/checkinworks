@@ -1,11 +1,6 @@
 import { Users, GraduationCap, Briefcase, Heart } from 'lucide-react';
-import Button from '../components/Button';
 
-interface ProgrammesProps {
-  onNavigate: (path: string) => void;
-}
-
-export default function Programmes({ onNavigate }: ProgrammesProps) {
+export default function Programmes() {
   return (
     <div className="min-h-screen">
       <section className="bg-gradient-to-br from-[#A66D3C] to-[#8a5730] text-white py-20 px-4 sm:px-6 lg:px-8">
@@ -85,9 +80,12 @@ export default function Programmes({ onNavigate }: ProgrammesProps) {
             >
               Make a referral
             </a>
-            <Button onClick={() => onNavigate('/contact')} variant="tertiary" size="large">
+            <a
+              href="/contact.html"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#A62D37] border-2 border-white rounded-lg hover:bg-transparent hover:text-white transition-all duration-200 font-semibold text-lg shadow-lg hover:shadow-xl"
+            >
               Ask a question
-            </Button>
+            </a>
           </div>
         </div>
       </section>

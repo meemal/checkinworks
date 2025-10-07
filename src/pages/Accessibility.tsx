@@ -1,10 +1,4 @@
-import Button from '../components/Button';
-
-interface AccessibilityProps {
-  onNavigate: (path: string) => void;
-}
-
-export default function Accessibility({ onNavigate }: AccessibilityProps) {
+export default function Accessibility() {
   return (
     <div className="min-h-screen">
       <section className="bg-gradient-to-br from-[#035AA6] to-[#024a8a] text-white py-20 px-4 sm:px-6 lg:px-8">
@@ -54,9 +48,12 @@ export default function Accessibility({ onNavigate }: AccessibilityProps) {
           </p>
 
           <div className="mt-10">
-            <Button onClick={() => onNavigate('/contact')}>
+            <a
+              href="/contact.html"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#035AA6] text-white rounded-lg hover:bg-[#024a8a] transition-colors font-semibold shadow-md hover:shadow-lg"
+            >
               Report an accessibility issue
-            </Button>
+            </a>
           </div>
         </div>
       </section>

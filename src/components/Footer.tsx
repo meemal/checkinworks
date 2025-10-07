@@ -1,8 +1,4 @@
-interface FooterProps {
-  onNavigate: (path: string) => void;
-}
-
-export default function Footer({ onNavigate }: FooterProps) {
+export default function Footer() {
   return (
     <footer className="bg-gradient-to-br from-gray-900 to-gray-800 text-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -20,30 +16,30 @@ export default function Footer({ onNavigate }: FooterProps) {
           <div>
             <h4 className="font-semibold text-white mb-4">Quick Links</h4>
             <nav className="flex flex-col gap-2">
-              <button
-                onClick={() => onNavigate('/annual-reports')}
+              <a
+                href="/annual-reports.html"
                 className="text-sm text-gray-300 hover:text-white transition-colors text-left"
               >
                 Annual Reports
-              </button>
-              <button
-                onClick={() => onNavigate('/contact')}
+              </a>
+              <a
+                href="/contact.html"
                 className="text-sm text-gray-300 hover:text-white transition-colors text-left"
               >
                 Contact
-              </button>
-              <button
-                onClick={() => onNavigate('/privacy')}
+              </a>
+              <a
+                href="/privacy.html"
                 className="text-sm text-gray-300 hover:text-white transition-colors text-left"
               >
                 Privacy Policy
-              </button>
-              <button
-                onClick={() => onNavigate('/accessibility')}
+              </a>
+              <a
+                href="/accessibility.html"
                 className="text-sm text-gray-300 hover:text-white transition-colors text-left"
               >
                 Accessibility
-              </button>
+              </a>
             </nav>
           </div>
 
