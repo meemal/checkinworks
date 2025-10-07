@@ -199,7 +199,7 @@ export default function Home({ onNavigate }: HomeProps) {
           </div>
           <div className="text-center">
             <Button onClick={() => onNavigate('/programmes')}>
-              Explore our programmes
+              Explore our programme
             </Button>
           </div>
         </div>
