@@ -300,14 +300,14 @@ export default function Home({ onNavigate }: HomeProps) {
             Recognised and accredited
           </h2>
           <div className="flex flex-wrap justify-center gap-8 mb-10">
-            <div className="bg-white border-2 border-gray-200 rounded-xl p-6  hover:shadow-lg transition-all">
+            <div className="bg-white rounded-xl p-6   transition-all">
               <img
                 src="/images/logos/Giraffe OSCR Logo.png"
                 alt="OSCR Registered Charity - Scottish Charity Regulator"
                 className="max-h-24 object-contain"
               />
             </div>
-            <div className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all">
+            <div className="bg-white  rounded-xl p-6 transition-all">
               <img
                 src="/images/logos/DisabilityConfidentLeader-Giraffe.png"
                 alt="Disability Confident Leader - UK Government Accreditation"
