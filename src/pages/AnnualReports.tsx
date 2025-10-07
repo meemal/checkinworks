@@ -88,6 +88,23 @@ export default function AnnualReports({ onNavigate }: AnnualReportsProps) {
                 Download
               </span>
             </a>
+            <a
+              href="/files/Checkin Works Accounts 21-22.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white border-2 border-gray-200 rounded-lg p-6 flex items-center justify-between hover:border-[#A62D37] transition-colors"
+            >
+              <div className="flex items-center gap-4">
+                <Download size={32} className="text-[#A62D37]" />
+                <div>
+                  <h3 className="font-bold text-lg text-gray-900">Annual Report and Accounts 2021-22</h3>
+                  <p className="text-sm text-gray-600">PDF Document</p>
+                </div>
+              </div>
+              <span className="px-6 py-2 bg-[#A62D37] text-white rounded-lg hover:bg-[#8a2530] transition-colors font-semibold">
+                Download
+              </span>
+            </a>
           </div>
         </div>
       </section>
