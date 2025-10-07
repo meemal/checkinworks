@@ -50,16 +50,6 @@ export default function About({ onNavigate }: AboutProps) {
         </div>
       </section>
 
-      <section className="bg-white py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-[#D99E6A] to-[#A66D3C] rounded-2xl p-10 text-white shadow-2xl">
-            <h3 className="text-3xl font-bold mb-6">Steve's story</h3>
-            <p className="text-lg leading-relaxed">
-              Steve joined us seven years ago with no work history. After a year he gained paid work, moved to a new job, returned to apply for a services role with us, then moved on again. He still checks in. We remain a critical friend, a cheerleader and a sounding board.
-            </p>
-          </div>
-        </div>
-      </section>
 
       <section className="bg-gradient-to-br from-gray-50 to-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
