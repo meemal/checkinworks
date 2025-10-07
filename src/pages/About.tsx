@@ -19,13 +19,13 @@ export default function About({ onNavigate }: AboutProps) {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-900">
-                People first, always
+                Supporting inclusion
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                We exist to support people who face barriers to life. We focus on inclusion, socialisation, attainment and, where appropriate, the pathway into meaningful work.
+   Our primary aim is to support autistic people and people with learning disabilities to move towards inclusion, socialisation, attainment, realising their own potential and, if appropriate, into meaningful work. We achieve this through a person-centred programme of life skills, team building, accredited training, supported work experience, goal setting, wellbeing activities and social activities. W
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Support is person-centred and flexible. There is no fixed end point.
+           e focus on overlooked aspects, such as confidence building, which enables our trainees to move their lives forward as well as being an active and included part in our local communities.
               </p>
             </div>
             <div className="rounded-xl overflow-hidden shadow-2xl">
