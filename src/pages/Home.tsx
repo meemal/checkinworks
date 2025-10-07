@@ -205,7 +205,7 @@ export default function Home({ onNavigate }: HomeProps) {
         </div>
       </section>
 
-      <section className="bg-gradient-to-br from-[#ADD1D9] to-white py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-br from-[#A62D37] to-[#8a2530] py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-white">
             Trainee Quotes
@@ -213,22 +213,22 @@ export default function Home({ onNavigate }: HomeProps) {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
               <img
-                src="/images/team-quotes/Daniel.jpg"
-                alt="Daniel - Check-In Works trainee"
+                src="/images/trainee-quotes/Andrew.png"
+                alt="Andrew - Check-In Works trainee quote"
                 className="w-full h-64 object-cover"
               />
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
               <img
-                src="/images/team-quotes/jackie.jpg"
-                alt="Jackie - Check-In Works trainee"
+                src="/images/trainee-quotes/Martin.png"
+                alt="Martin - Check-In Works trainee quote"
                 className="w-full h-64 object-cover"
               />
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
               <img
-                src="/images/team-quotes/martin.jpg"
-                alt="Martin - Check-In Works trainee"
+                src="/images/trainee-quotes/Steven.png"
+                alt="Steven - Check-In Works trainee quote"
                 className="w-full h-64 object-cover"
               />
             </div>
