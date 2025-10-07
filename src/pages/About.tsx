@@ -72,7 +72,7 @@ export default function About({ onNavigate }: AboutProps) {
       <section className="bg-gradient-to-br from-gray-50 to-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="rounded-xl overflow-hidden shadow-2xl">
+            <div className="rounded-xl overflow-hidden ">
               <img
                 src="/images/logos/Giraffe Logo.svg"
                 alt="Giraffe Trading - our social enterprise partner"
