@@ -43,6 +43,8 @@ export default function About({ onNavigate }: AboutProps) {
       </section>
 
       <section className="bg-gradient-to-br from-[#ADD1D9] to-white py-20 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
         <div className="rounded-xl overflow-hidden shadow-2xl">
               <img
                 src="/images/Giraffe trainees playing foot golf.jpg"
@@ -62,6 +64,8 @@ export default function About({ onNavigate }: AboutProps) {
          We are guided by each individual's aspirations and support them through every step of that journey.
           </p>
         </div>
+             </div>
+               </div>
       </section>
 
 
