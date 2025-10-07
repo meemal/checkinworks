@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { MapPin, Phone, Mail, CheckCircle } from 'lucide-react';
 import Button from '../components/Button';
+import { supabase } from '../lib/supabase';
 
 interface ContactProps {
   onNavigate: (path: string) => void;
@@ -17,23 +18,48 @@ export default function Contact({ onNavigate }: ContactProps) {
     consent: false,
   });
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({
-        reason: '',
-        name: '',
-        organisation: '',
-        email: '',
-        phone: '',
-        message: '',
-        consent: false,
-      });
-    }, 3000);
+    setIsSubmitting(true);
+    setError('');
+
+    try {
+      const { error: submitError } = await supabase
+        .from('contact_submissions')
+        .insert([{
+          reason: formData.reason,
+          name: formData.name,
+          organisation: formData.organisation || null,
+          email: formData.email,
+          phone: formData.phone || null,
+          message: formData.message,
+          consent: formData.consent,
+        }]);
+
+      if (submitError) throw submitError;
+
+      setSubmitted(true);
+      setTimeout(() => {
+        setSubmitted(false);
+        setFormData({
+          reason: '',
+          name: '',
+          organisation: '',
+          email: '',
+          phone: '',
+          message: '',
+          consent: false,
+        });
+      }, 3000);
+    } catch (err) {
+      setError('Failed to submit form. Please try again.');
+      console.error('Form submission error:', err);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -67,7 +93,13 @@ export default function Contact({ onNavigate }: ContactProps) {
                 <p className="text-lg text-gray-700">We will respond as soon as we can.</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <>
+                {error && (
+                  <div className="bg-red-50 border-2 border-red-500 rounded-lg p-4 mb-6">
+                    <p className="text-red-700">{error}</p>
+                  </div>
+                )}
+                <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="reason" className="block text-sm font-semibold text-gray-700 mb-2">
                     Reason for contact
@@ -176,10 +208,11 @@ export default function Contact({ onNavigate }: ContactProps) {
                   </label>
                 </div>
 
-                <Button type="submit" size="large" className="w-full">
-                  Send message
+                <Button type="submit" size="large" className="w-full" disabled={isSubmitting}>
+                  {isSubmitting ? 'Sending...' : 'Send message'}
                 </Button>
               </form>
+              </>
             )}
           </div>
 
