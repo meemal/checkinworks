@@ -286,11 +286,13 @@ export default function Home() {
             className="inline-block transition-transform hover:scale-105"
             aria-label="Visit Giraffe Trading website - opens in new window"
           >
-            <img
-              src="/images/logos/Giraffe Logo.svg"
-              alt="Giraffe Trading - Social Enterprise Partner"
-              className="max-h-32 mx-auto object-contain"
-            />
+        
+              <img
+                src="/images/logos/Giraffe Logo.svg"
+                alt="Giraffe Trading - our social enterprise partner"
+                className="w-full h-full object-cover"
+              />
+         
           </a>
         </div>
       </section>
