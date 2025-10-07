@@ -211,9 +211,7 @@ export default function Contact({ onNavigate }: ContactProps) {
               </div>
             </div>
 
-            <div className="bg-gray-200 rounded-xl h-64 flex items-center justify-center">
-              <p className="text-gray-600 font-semibold">Map of Perth & Kinross</p>
-            </div>
+\
           </div>
         </div>
       </section>
