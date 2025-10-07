@@ -81,7 +81,7 @@ export default function Programmes({ onNavigate }: ProgrammesProps) {
               href="https://www.giraffe-trading.co.uk/referral-form"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#A62D37] rounded-lg hover:bg-gray-50 transition-colors font-semibold text-lg shadow-lg hover:shadow-xl"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#A62D37] border-2 border-white rounded-lg hover:bg-transparent hover:text-white transition-all duration-200 font-semibold text-lg shadow-lg hover:shadow-xl"
             >
               Make a referral
             </a>

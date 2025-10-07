@@ -106,7 +106,7 @@ export default function Home({ onNavigate }: HomeProps) {
               href="https://www.giraffe-trading.co.uk/referral-form"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#A62D37] rounded-lg hover:bg-gray-50 transition-colors font-semibold text-lg shadow-lg hover:shadow-xl"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#A62D37] text-white rounded-lg hover:bg-[#8a2530] transition-all duration-200 font-semibold text-lg shadow-lg hover:shadow-xl"
             >
               Make a referral
             </a>
@@ -389,7 +389,7 @@ export default function Home({ onNavigate }: HomeProps) {
                   href="https://www.giraffe-trading.co.uk/referral-form"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-6 py-3 bg-white text-[#035AA6] rounded-lg hover:bg-gray-50 transition-colors font-semibold shadow-md hover:shadow-lg"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-white text-[#035AA6] border-2 border-[#035AA6] rounded-lg hover:bg-[#035AA6] hover:text-white transition-all duration-200 font-semibold shadow-md hover:shadow-lg"
                 >
                   Make a referral
                 </a>
