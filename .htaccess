@@ -1,0 +1,21 @@
+# Enable rewrite engine
+RewriteEngine On
+
+# Prevent direct access to .html files (optional - keeps URLs clean)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP/
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
+# Rewrite clean URLs to .html files
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L]
+
+# Handle root index
+DirectoryIndex index.html
+
+# Ensure trailing slashes are handled consistently
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*)$ $1/ [L,R=301]
