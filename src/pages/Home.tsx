@@ -271,7 +271,7 @@ export default function Home({ onNavigate }: HomeProps) {
             Our social enterprise partner
           </h2>
           <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-            Check-In Works is the charity. Giraffe Trading is our community interest company. The trading activity helps fund our social purpose.
+            Giraffe Trading is our community interest company - this trading activity provides the supported and professional work experience opportunities and helps fund our social purpose.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button onClick={() => onNavigate('/about')}>
