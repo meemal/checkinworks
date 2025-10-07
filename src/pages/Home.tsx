@@ -102,10 +102,15 @@ export default function Home({ onNavigate }: HomeProps) {
             We help autistic people and people with learning disabilities to build skills, confidence and meaningful connections. Our programmes include life skills, accredited training, supported work experience and wellbeing activities in Perth and Kinross and beyond.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button onClick={() => onNavigate('/get-involved')} variant="secondary" size="large">
+            <a
+              href="https://www.giraffe-trading.co.uk/referral-form"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#A62D37] rounded-lg hover:bg-gray-50 transition-colors font-semibold text-lg shadow-lg hover:shadow-xl"
+            >
               Make a referral
-            </Button>
-            <Button onClick={() => onNavigate('/impact')} variant="tertiary" size="large">
+            </a>
+            <Button onClick={() => onNavigate('/annual-reports')} variant="tertiary" size="large">
               Read our annual reports
             </Button>
           </div>
@@ -262,7 +267,7 @@ export default function Home({ onNavigate }: HomeProps) {
               />
             </div>
           </div>
-          <Button onClick={() => onNavigate('/impact')}>
+          <Button onClick={() => onNavigate('/annual-reports')}>
             See our latest report
           </Button>
         </div>
@@ -337,9 +342,14 @@ export default function Home({ onNavigate }: HomeProps) {
                 <p className="leading-relaxed mb-6">
                   Use our simple form to tell us about the person and their goals. We will get back to you to discuss next steps.
                 </p>
-                <Button onClick={() => onNavigate('/contact')} variant="tertiary">
+                <a
+                  href="https://www.giraffe-trading.co.uk/referral-form"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-white text-[#035AA6] rounded-lg hover:bg-gray-50 transition-colors font-semibold shadow-md hover:shadow-lg"
+                >
                   Make a referral
-                </Button>
+                </a>
               </div>
             </div>
 
