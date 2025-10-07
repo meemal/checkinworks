@@ -7,7 +7,7 @@ interface ContactProps {
   onNavigate: (path: string) => void;
 }
 
-export default function Contact({ onNavigate }: ContactProps) {
+export default function Contact({}: ContactProps) {
   const [formData, setFormData] = useState({
     reason: '',
     name: '',

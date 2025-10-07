@@ -1,4 +1,4 @@
-import { Users, Award, Heart, ArrowRight, UserPlus, HandHeart } from 'lucide-react';
+import { Users, Award, Heart, UserPlus, HandHeart } from 'lucide-react';
 import Button from '../components/Button';
 
 interface HomeProps {

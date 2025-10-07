@@ -1,4 +1,4 @@
-import { Download, Award } from 'lucide-react';
+import { Download } from 'lucide-react';
 import Button from '../components/Button';
 
 interface AnnualReportsProps {
