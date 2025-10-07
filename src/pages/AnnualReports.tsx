@@ -205,7 +205,7 @@ export default function AnnualReports() {
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-6">
             <a
-              href="/contact.html"
+              href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#A62D37] border-2 border-white rounded-lg hover:bg-transparent hover:text-white transition-all duration-200 font-semibold text-lg shadow-lg hover:shadow-xl"
             >
               Contact our team

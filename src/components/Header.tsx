@@ -3,10 +3,10 @@ import { Menu, X, ExternalLink } from 'lucide-react';
 
 const navigation = [
   { label: 'Home', path: '/' },
-  { label: 'About', path: '/about.html' },
-  { label: 'Our Programme', path: '/programmes.html' },
-  { label: 'Annual Reports', path: '/annual-reports.html' },
-  { label: 'Contact', path: '/contact.html' },
+  { label: 'About', path: '/about' },
+  { label: 'Our Programme', path: '/programmes' },
+  { label: 'Annual Reports', path: '/annual-reports' },
+  { label: 'Contact', path: '/contact' },
 ];
 
 export default function Header() {

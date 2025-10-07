@@ -110,7 +110,7 @@ export default function Home() {
                 Make a referral
               </a>
               <a
-                href="/annual-reports.html"
+                href="/annual-reports"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-gray-900 border-2 border-gray-300 rounded-lg hover:bg-gray-50 transition-all duration-200 font-semibold text-lg shadow-lg hover:shadow-xl"
               >
                 Read our annual reports
@@ -202,7 +202,7 @@ export default function Home() {
           </div>
           <div className="text-center">
             <a
-              href="/programmes.html"
+              href="/programmes"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#035AA6] text-white rounded-lg hover:bg-[#024a8a] transition-colors font-semibold shadow-md hover:shadow-lg"
             >
               Explore our programme
@@ -317,7 +317,7 @@ export default function Home() {
             </div>
           </div>
           <a
-            href="/annual-reports.html"
+            href="/annual-reports"
             className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#035AA6] text-white rounded-lg hover:bg-[#024a8a] transition-colors font-semibold shadow-md hover:shadow-lg"
           >
             See our latest report
@@ -413,7 +413,7 @@ export default function Home() {
                   Your funding helps people build confidence, learn new skills and move forward. We welcome conversations with trusts, foundations, businesses and individuals.
                 </p>
                 <a
-                  href="/contact.html"
+                  href="/contact"
                   className="inline-flex items-center justify-center px-6 py-3 bg-white text-[#A66D3C] border-2 border-[#A66D3C] rounded-lg hover:bg-[#A66D3C] hover:text-white transition-all duration-200 font-semibold shadow-md hover:shadow-lg"
                 >
                   Start a conversation
@@ -429,7 +429,7 @@ export default function Home() {
                   We keep a small pool of volunteers for specific roles. If you would like to help, please share your interests and availability.
                 </p>
                 <a
-                  href="/contact.html"
+                  href="/contact"
                   className="inline-flex items-center justify-center px-6 py-3 bg-white text-[#A62D37] border-2 border-[#A62D37] rounded-lg hover:bg-[#A62D37] hover:text-white transition-all duration-200 font-semibold shadow-md hover:shadow-lg"
                 >
                   Register interest

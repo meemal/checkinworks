@@ -49,7 +49,7 @@ export default function Accessibility() {
 
           <div className="mt-10">
             <a
-              href="/contact.html"
+              href="/contact"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#035AA6] text-white rounded-lg hover:bg-[#024a8a] transition-colors font-semibold shadow-md hover:shadow-lg"
             >
               Report an accessibility issue
