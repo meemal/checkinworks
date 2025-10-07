@@ -77,9 +77,14 @@ export default function Programmes({ onNavigate }: ProgrammesProps) {
       <section className="bg-gradient-to-br from-[#A62D37] to-[#8a2530] text-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-6">
-            <Button onClick={() => onNavigate('/get-involved')} variant="secondary" size="large">
+           <a
+              href="https://www.giraffe-trading.co.uk/referral-form"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#A62D37] rounded-lg hover:bg-gray-50 transition-colors font-semibold text-lg shadow-lg hover:shadow-xl"
+            >
               Make a referral
-            </Button>
+            </a>
             <Button onClick={() => onNavigate('/contact')} variant="tertiary" size="large">
               Ask a question
             </Button>
