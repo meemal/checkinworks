@@ -224,7 +224,7 @@ export default function Contact({}: ContactProps) {
                   <MapPin size={24} className="text-[#A62D37] flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-gray-900">Address</p>
-                    <p className="text-gray-700"><br /Perth & Kinross<br />Scotland</p>
+                    <p className="text-gray-700">Perth & Kinross<br />Scotland</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
