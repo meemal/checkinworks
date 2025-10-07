@@ -28,7 +28,7 @@ export default function NotFound({ onNavigate }: NotFoundProps) {
 
           <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow">
             <BookOpen size={48} className="mx-auto mb-4 text-[#035AA6]" />
-            <h3 className="font-bold text-lg text-gray-900 mb-3">Our Programmes</h3>
+            <h3 className="font-bold text-lg text-gray-900 mb-3">Our Programme</h3>
             <Button onClick={() => onNavigate('/programmes')} variant="secondary">
               View programmes
             </Button>
