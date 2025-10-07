@@ -205,6 +205,37 @@ export default function Home({ onNavigate }: HomeProps) {
         </div>
       </section>
 
+      <section className="bg-gradient-to-br from-[#A62D37] to-[#8a2530] py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-white">
+            Trainee Quotes
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+              <img
+                src="/images/team-quotes/Daniel.jpg"
+                alt="Daniel - Check-In Works trainee"
+                className="w-full h-64 object-cover"
+              />
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+              <img
+                src="/images/team-quotes/jackie.jpg"
+                alt="Jackie - Check-In Works trainee"
+                className="w-full h-64 object-cover"
+              />
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
+              <img
+                src="/images/team-quotes/martin.jpg"
+                alt="Martin - Check-In Works trainee"
+                className="w-full h-64 object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-gradient-to-br from-[#D99E6A] to-[#A66D3C] py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-2xl p-10 shadow-2xl">
