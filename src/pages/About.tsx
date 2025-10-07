@@ -47,8 +47,11 @@ export default function About({ onNavigate }: AboutProps) {
           <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-900">
             What a typical journey can look like
           </h2>
+          <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            There is no typical journey! For example, a trainee may begin with a simple goal such as making eye contact, whereas others aim for accredited training or a first job. 
+          </p>
           <p className="text-lg text-gray-700 leading-relaxed">
-            A trainee may begin with a simple goal, such as making eye contact. Others aim for accredited training or a first job. We meet people where they are, build confidence and celebrate progress at every step.
+         We are guided by each individual's aspirations and support them through every step of that journey.
           </p>
         </div>
       </section>
