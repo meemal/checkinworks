@@ -87,10 +87,11 @@ export default function About({ onNavigate }: AboutProps) {
                 The charity leads on social outcomes. Giraffe Trading carries out trading activity. Income is reinvested so more people can be supported.
               </p>
               <a
-                href="https://giraffe-trading.co.uk"
+                href="https://www.giraffe-trading.co.uk/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-[#035AA6] text-white rounded-lg hover:bg-[#024a8a] transition-colors font-semibold text-lg shadow-lg hover:shadow-xl"
+                aria-label="Visit Giraffe Trading website (opens in new tab)"
               >
                 Visit Giraffe Trading
                 <ArrowRight size={20} />
@@ -103,10 +104,15 @@ export default function About({ onNavigate }: AboutProps) {
       <section className="bg-gradient-to-br from-[#A62D37] to-[#8a2530] text-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-3 gap-6">
-            <Button onClick={() => onNavigate('/get-involved')} variant="secondary" size="large">
+            <a
+              href="https://www.giraffe-trading.co.uk/referral-form"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#A62D37] border-2 border-white rounded-lg hover:bg-transparent hover:text-white transition-all duration-200 font-semibold text-lg"
+            >
               Make a referral
-            </Button>
-            <Button onClick={() => onNavigate('/anual-reports')} variant="tertiary" size="large">
+            </a>
+            <Button onClick={() => onNavigate('/annual-reports')} variant="tertiary" size="large">
               Read our annual reports
             </Button>
             <Button onClick={() => onNavigate('/contact')} variant="secondary" size="large">

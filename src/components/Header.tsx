@@ -25,10 +25,11 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
           <button
             onClick={() => onNavigate('/')}
             className="hover:opacity-80 transition-opacity"
+            aria-label="Return to homepage"
           >
             <img
               src="/images/logos/Checkin-works-logo-h.svg"
-              alt="Check-In Works"
+              alt="Check-In Works logo"
               className="h-24"
             />
           </button>
@@ -88,10 +89,11 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
               </button>
             ))}
             <a
-              href="https://giraffekitchen.co.uk"
+              href="https://www.giraffe-trading.co.uk/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-3 bg-[#035AA6] text-white rounded-lg hover:bg-[#024a8a] transition-colors"
+              aria-label="Visit Giraffe Trading website (opens in new tab)"
             >
               Visit Giraffe Trading
               <ExternalLink size={16} />
