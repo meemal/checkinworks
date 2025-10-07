@@ -211,7 +211,7 @@ export default function Contact({ onNavigate }: ContactProps) {
               </div>
             </div>
 
-\
+
           </div>
         </div>
       </section>
