@@ -29,7 +29,7 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
             <img
               src="/images/logos/Checkin-works-logo.svg"
               alt="Check-In Works"
-              className="h-16"
+              className="h-36"
             />
           </button>
 
