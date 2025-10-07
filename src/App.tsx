@@ -32,8 +32,11 @@ function App() {
   };
 
   const renderPage = () => {
-    switch (currentPath) {
+    const path = currentPath.replace('.html', '');
+
+    switch (path) {
       case '/':
+      case '/index':
         return <Home onNavigate={navigate} />;
       case '/about':
         return <About onNavigate={navigate} />;
