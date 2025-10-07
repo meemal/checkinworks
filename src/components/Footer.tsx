@@ -8,11 +8,7 @@ export default function Footer({ onNavigate }: FooterProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <img
-              src="/images/logos/Giraffe Logo white.svg"
-              alt="Check-In Works with Giraffe"
-              className="h-16 w-auto mb-4"
-            />
+            <h3 className="text-xl font-bold text-white mb-4">Check-In Works</h3>
             <p className="text-sm text-gray-300 mb-2">
               Scottish Charity Number: SC123456
             </p>

@@ -217,37 +217,26 @@ export default function Home({ onNavigate }: HomeProps) {
       </section>
 
       <section className="bg-white py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="flex justify-center">
-              <img
-                src="/images/logos/Giraffe Logo white.svg"
-                alt="Giraffe Kitchen - our social enterprise partner"
-                className="h-40 w-auto bg-gradient-to-br from-[#A66D3C] to-[#8a5730] p-8 rounded-2xl shadow-xl"
-              />
-            </div>
-            <div className="text-center md:text-left">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-900">
-                Our social enterprise partner
-              </h2>
-              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                Check-In Works is the charity. Giraffe Kitchen is our community interest company. The trading activity helps fund our social purpose.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                <Button onClick={() => onNavigate('/about')}>
-                  Learn about the relationship
-                </Button>
-                <a
-                  href="https://giraffekitchen.co.uk"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-[#035AA6] text-white rounded-lg hover:bg-[#024a8a] transition-colors font-semibold text-lg shadow-lg hover:shadow-xl justify-center"
-                >
-                  Visit Giraffe Kitchen
-                  <ArrowRight size={20} />
-                </a>
-              </div>
-            </div>
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-900">
+            Our social enterprise partner
+          </h2>
+          <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            Check-In Works is the charity. Giraffe Kitchen is our community interest company. The trading activity helps fund our social purpose.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button onClick={() => onNavigate('/about')}>
+              Learn about the relationship
+            </Button>
+            <a
+              href="https://giraffekitchen.co.uk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#035AA6] text-white rounded-lg hover:bg-[#024a8a] transition-colors font-semibold text-lg shadow-lg hover:shadow-xl"
+            >
+              Visit Giraffe Kitchen
+              <ArrowRight size={20} />
+            </a>
           </div>
         </div>
       </section>

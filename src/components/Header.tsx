@@ -24,13 +24,9 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
         <div className="flex justify-between items-center py-4">
           <button
             onClick={() => onNavigate('/')}
-            className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+            className="text-2xl font-bold text-[#A62D37] hover:opacity-80 transition-opacity"
           >
-            <img
-              src="/images/logos/Checkin-works-logo.svg"
-              alt="Check-In Works"
-              className="h-12 w-auto"
-            />
+            Check-In Works
           </button>
 
           <nav className="hidden lg:flex items-center gap-6">
@@ -53,7 +49,7 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
               rel="noopener noreferrer"
               className="flex items-center gap-1 px-4 py-2 bg-[#035AA6] text-white rounded-lg hover:bg-[#024a8a] transition-colors text-sm font-medium"
             >
-              Giraffe Trading
+              Giraffe Kitchen
               <ExternalLink size={14} />
             </a>
           </nav>
@@ -93,7 +89,7 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-3 bg-[#035AA6] text-white rounded-lg hover:bg-[#024a8a] transition-colors"
             >
-              Visit Giraffe Trading
+              Visit Giraffe Kitchen
               <ExternalLink size={16} />
             </a>
           </nav>

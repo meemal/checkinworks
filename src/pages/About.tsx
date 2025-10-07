@@ -66,8 +66,8 @@ export default function About({ onNavigate }: AboutProps) {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="rounded-xl overflow-hidden shadow-2xl">
               <img
-                src="/images/Giraffe Trading.jpg"
-                alt="Giraffe Trading - our social enterprise partner"
+                src="/images/Giraffe Kitchen.jpg"
+                alt="Giraffe Kitchen - our social enterprise partner"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -76,7 +76,7 @@ export default function About({ onNavigate }: AboutProps) {
                 Charity and social enterprise, working together
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                The charity leads on social outcomes. Giraffe Trading carries out trading activity. Income is reinvested so more people can be supported.
+                The charity leads on social outcomes. Giraffe Kitchen carries out trading activity. Income is reinvested so more people can be supported.
               </p>
               <a
                 href="https://giraffekitchen.co.uk"
@@ -84,7 +84,7 @@ export default function About({ onNavigate }: AboutProps) {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-[#035AA6] text-white rounded-lg hover:bg-[#024a8a] transition-colors font-semibold text-lg shadow-lg hover:shadow-xl"
               >
-                Visit Giraffe Trading
+                Visit Giraffe Kitchen
                 <ArrowRight size={20} />
               </a>
             </div>
