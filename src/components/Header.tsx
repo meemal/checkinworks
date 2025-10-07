@@ -6,7 +6,7 @@ const navigation: NavigationItem[] = [
   { label: 'Home', path: '/' },
   { label: 'About', path: '/about' },
   { label: 'Our Programmes', path: '/programmes' },
-  { label: 'Annual Reports', path: '/impact' },
+  { label: 'Annual Reports', path: '/annual-reports' },
   { label: 'Contact', path: '/contact' },
 ];
 

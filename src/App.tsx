@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Programmes from './pages/Programmes';
-import Impact from './pages/Impact';
+import AnnualReports from './pages/AnnualReports';
 import Contact from './pages/Contact';
 import Privacy from './pages/Privacy';
 import Accessibility from './pages/Accessibility';
@@ -39,8 +39,8 @@ function App() {
         return <About onNavigate={navigate} />;
       case '/programmes':
         return <Programmes onNavigate={navigate} />;
-      case '/impact':
-        return <Impact onNavigate={navigate} />;
+      case '/annual-reports':
+        return <AnnualReports onNavigate={navigate} />;
       case '/contact':
         return <Contact onNavigate={navigate} />;
       case '/privacy':

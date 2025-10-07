@@ -1,16 +1,16 @@
 import { Download, Award } from 'lucide-react';
 import Button from '../components/Button';
 
-interface ImpactProps {
+interface AnnualReportsProps {
   onNavigate: (path: string) => void;
 }
 
-export default function Impact({ onNavigate }: ImpactProps) {
+export default function AnnualReports({ onNavigate }: AnnualReportsProps) {
   return (
     <div className="min-h-screen">
       <section className="bg-gradient-to-br from-[#035AA6] to-[#024a8a] text-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-6">Impact and Reports</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-6">Annual Reports</h1>
         </div>
       </section>
 
