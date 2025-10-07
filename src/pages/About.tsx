@@ -69,7 +69,7 @@ export default function About({ onNavigate }: AboutProps) {
                 The charity leads on social outcomes. Giraffe Trading carries out trading activity. Income is reinvested so more people can be supported.
               </p>
               <a
-                href="https://giraffekitchen.co.uk"
+                href="https://giraffe-trading.co.uk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-[#035AA6] text-white rounded-lg hover:bg-[#024a8a] transition-colors font-semibold text-lg shadow-lg hover:shadow-xl"
