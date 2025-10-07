@@ -92,8 +92,12 @@ const partners = [
 export default function Home({ onNavigate }: HomeProps) {
   return (
     <div className="min-h-screen">
-      <section className="relative bg-gradient-to-br from-[#A62D37] via-[#8a2530] to-[#A62D37] text-white py-24 px-4 sm:px-6 lg:px-8">
-        <div className="absolute inset-0 bg-black opacity-10"></div>
+      <section className="relative text-white py-24 px-4 sm:px-6 lg:px-8">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: 'url(/images/trainees prepping food.jpg)' }}
+        ></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#A62D37]/90 via-[#8a2530]/85 to-[#A62D37]/90"></div>
         <div className="relative max-w-5xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
             Supporting people to realise their own potential
