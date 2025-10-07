@@ -273,20 +273,7 @@ export default function Home({ onNavigate }: HomeProps) {
           <p className="text-lg text-gray-700 mb-8 leading-relaxed">
             Giraffe Trading is our community interest company - this trading activity provides the supported and professional work experience opportunities and helps fund our social purpose.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button onClick={() => onNavigate('/about')}>
-              Learn about the relationship
-            </Button>
-            <a
-              href="https://giraffekitchen.co.uk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#035AA6] text-white rounded-lg hover:bg-[#024a8a] transition-colors font-semibold text-lg shadow-lg hover:shadow-xl"
-            >
-              Visit Giraffe Trading
-              <ArrowRight size={20} />
-            </a>
-          </div>
+         
         </div>
       </section>
 
