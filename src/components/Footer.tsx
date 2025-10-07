@@ -21,7 +21,7 @@ export default function Footer({ onNavigate }: FooterProps) {
             <h4 className="font-semibold text-white mb-4">Quick Links</h4>
             <nav className="flex flex-col gap-2">
               <button
-                onClick={() => onNavigate('/impact')}
+                onClick={() => onNavigate('/annual-reports')}
                 className="text-sm text-gray-300 hover:text-white transition-colors text-left"
               >
                 Annual Reports
