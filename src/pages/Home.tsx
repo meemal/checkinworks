@@ -106,7 +106,7 @@ export default function Home({ onNavigate }: HomeProps) {
               Make a referral
             </Button>
             <Button onClick={() => onNavigate('/impact')} variant="tertiary" size="large">
-              Read our latest impact
+              Read our annual reports
             </Button>
           </div>
         </div>
