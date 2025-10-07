@@ -126,7 +126,7 @@ export default function Home({ onNavigate }: HomeProps) {
             <div className="bg-white rounded-xl p-8 shadow-lg">
               <div className="text-5xl font-bold text-[#A62D37] mb-3">60</div>
               <p className="text-gray-700 leading-relaxed">
-                Around 60 trainees supported each year through direct programmes.
+                Around 60 trainees supported each year through a direct programme.
               </p>
             </div>
             <div className="bg-white rounded-xl p-8 shadow-lg">
