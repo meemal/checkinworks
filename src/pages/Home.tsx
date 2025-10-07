@@ -208,7 +208,7 @@ export default function Home({ onNavigate }: HomeProps) {
       <section className="bg-gradient-to-br from-[#A62D37] to-[#8a2530] py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-white">
-            Trainee Quotes
+            Team Quotes
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all">
