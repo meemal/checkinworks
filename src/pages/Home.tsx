@@ -159,13 +159,13 @@ export default function Home({ onNavigate }: HomeProps) {
             Practical support that builds confidence
           </h2>
           <div className="grid md:grid-cols-3 gap-8 mb-10">
-            <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow flex flex-col">
+            <div className="bg-gradient-to-br from-[#A62D37] to-[#8a2530] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow flex flex-col">
               <img
                 src="/images/giraffe staff and trainees.jpg"
                 alt="Check-In Works staff and trainees working together"
                 className="w-full h-48 object-cover"
               />
-              <div className="bg-gradient-to-br from-[#A62D37] to-[#8a2530] text-white p-8 flex-1 flex flex-col">
+              <div className="text-white p-8 flex-1 flex flex-col">
                 <Users size={48} className="mb-4" />
                 <h3 className="text-2xl font-bold mb-3">Life skills and confidence</h3>
                 <p className="leading-relaxed">
@@ -173,13 +173,13 @@ export default function Home({ onNavigate }: HomeProps) {
                 </p>
               </div>
             </div>
-            <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow flex flex-col">
+            <div className="bg-gradient-to-br from-[#035AA6] to-[#024a8a] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow flex flex-col">
               <img
                 src="/images/Dionne cooking - Giraffe trainee.jpg"
                 alt="Trainee learning cooking skills in the kitchen"
                 className="w-full h-48 object-cover"
               />
-              <div className="bg-gradient-to-br from-[#035AA6] to-[#024a8a] text-white p-8 flex-1 flex flex-col">
+              <div className="text-white p-8 flex-1 flex flex-col">
                 <Award size={48} className="mb-4" />
                 <h3 className="text-2xl font-bold mb-3">Training and work experience</h3>
                 <p className="leading-relaxed">
@@ -187,13 +187,13 @@ export default function Home({ onNavigate }: HomeProps) {
                 </p>
               </div>
             </div>
-            <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow flex flex-col">
+            <div className="bg-gradient-to-br from-[#A66D3C] to-[#8a5730] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow flex flex-col">
               <img
                 src="/images/Trainees Wellness Walk on Kinnoull Hill.jpg"
                 alt="Trainees on a wellness walk enjoying outdoor activities"
                 className="w-full h-48 object-cover"
               />
-              <div className="bg-gradient-to-br from-[#A66D3C] to-[#8a5730] text-white p-8 flex-1 flex flex-col">
+              <div className="text-white p-8 flex-1 flex flex-col">
                 <Heart size={48} className="mb-4" />
                 <h3 className="text-2xl font-bold mb-3">Wellbeing and social connection</h3>
                 <p className="leading-relaxed">
