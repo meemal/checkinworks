@@ -98,7 +98,7 @@ export default function Home({ onNavigate }: HomeProps) {
           style={{ backgroundImage: "url('/images/hands%20in%20kitchen%20-%20giraffe%20trainees.jpg')" }}
         ></div>
         <div className="relative max-w-5xl mx-auto text-center">
-          <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-8 sm:p-12">
+          <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 sm:p-12">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-gray-900">
               Supporting people to realise their own potential
             </h1>
