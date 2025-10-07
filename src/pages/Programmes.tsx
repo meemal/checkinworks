@@ -10,7 +10,7 @@ export default function Programmes({ onNavigate }: ProgrammesProps) {
     <div className="min-h-screen">
       <section className="bg-gradient-to-br from-[#A66D3C] to-[#8a5730] text-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-6">Our Programmes</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-6">Our Programme</h1>
         </div>
       </section>
 
