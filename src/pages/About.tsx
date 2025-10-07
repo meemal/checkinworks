@@ -106,7 +106,7 @@ export default function About({ onNavigate }: AboutProps) {
             <Button onClick={() => onNavigate('/get-involved')} variant="secondary" size="large">
               Make a referral
             </Button>
-            <Button onClick={() => onNavigate('/impact')} variant="tertiary" size="large">
+            <Button onClick={() => onNavigate('/anual-reports')} variant="tertiary" size="large">
               Read our impact
             </Button>
             <Button onClick={() => onNavigate('/contact')} variant="secondary" size="large">
