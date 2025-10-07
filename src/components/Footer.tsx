@@ -10,7 +10,7 @@ export default function Footer({ onNavigate }: FooterProps) {
           <div>
             <h3 className="text-xl font-bold text-white mb-4">Check-In Works</h3>
             <p className="text-sm text-gray-300 mb-2">
-              Scottish Charity Number: SC123456
+              Scottish Charity Number: SC041642
             </p>
             <p className="text-sm text-gray-300">
               Registered Address: Perth & Kinross, Scotland
