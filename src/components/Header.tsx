@@ -27,7 +27,7 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
             className="flex items-center gap-3 hover:opacity-80 transition-opacity"
           >
             <img
-              src="/images/logos/Checkin-works.svg"
+              src="/images/logos/Checkin-works-logo.svg"
               alt="Check-In Works"
               className="h-12 w-auto"
             />
