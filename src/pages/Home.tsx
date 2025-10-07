@@ -96,7 +96,7 @@ export default function Home({ onNavigate }: HomeProps) {
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="relative max-w-5xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Supporting people with barriers to life
+            Supporting people to realise their potential
           </h1>
           <p className="text-lg sm:text-xl mb-10 max-w-3xl mx-auto leading-relaxed opacity-95">
             We help autistic people and people with learning disabilities to build skills, confidence and meaningful connections. Our programmes include life skills, accredited training, supported work experience and wellbeing activities in Perth and Kinross and beyond.
