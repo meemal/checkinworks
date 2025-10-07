@@ -95,7 +95,7 @@ export default function Home({ onNavigate }: HomeProps) {
       <section className="relative text-white py-24 px-4 sm:px-6 lg:px-8 min-h-[600px] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: 'url(/images/hands in kitchen - giraffe trainees.jpg)' }}
+          style={{ backgroundImage: "url('/images/hands%20in%20kitchen%20-%20giraffe%20trainees.jpg')" }}
         ></div>
         <div className="relative max-w-5xl mx-auto text-center">
           <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-8 sm:p-12">
