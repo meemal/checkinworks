@@ -27,6 +27,10 @@ export default function Contact({}: ContactProps) {
     setError('');
 
     try {
+      if (!supabase) {
+        throw new Error('Database connection not available');
+      }
+
       const { error: submitError } = await supabase
         .from('contact_submissions')
         .insert([{
