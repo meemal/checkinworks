@@ -107,7 +107,7 @@ export default function About({ onNavigate }: AboutProps) {
               Make a referral
             </Button>
             <Button onClick={() => onNavigate('/anual-reports')} variant="tertiary" size="large">
-              Read our impact
+              Read our annual reports
             </Button>
             <Button onClick={() => onNavigate('/contact')} variant="secondary" size="large">
               Contact us
