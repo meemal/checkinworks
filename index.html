@@ -12,9 +12,271 @@
     <meta property="og:url" content="https://checkinworks.co.uk" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="theme-color" content="#A62D37" />
+    <script type="module" src="/src/styles.css"></script>
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main-home.tsx"></script>
+  <body class="min-h-screen flex flex-col bg-gray-50">
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-[#A62D37] focus:text-white focus:rounded-lg"
+    >
+      Skip to main content
+    </a>
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <div class="flex-shrink-0">
+            <a href="/" class="flex items-center">
+              <img src="/images/logos/Checkin-works-logo-h.svg" alt="Check-In Works" class="h-12" />
+            </a>
+          </div>
+
+          <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100" aria-label="Toggle menu">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+
+          <div class="hidden md:flex md:items-center md:space-x-1">
+            <a href="/" class="px-4 py-2 text-[#A62D37] font-semibold border-b-2 border-[#A62D37]">Home</a>
+            <a href="/about.html" class="px-4 py-2 text-gray-700 hover:text-[#A62D37] hover:bg-gray-50 rounded-md transition-colors">About</a>
+            <a href="/programmes.html" class="px-4 py-2 text-gray-700 hover:text-[#A62D37] hover:bg-gray-50 rounded-md transition-colors">Programmes</a>
+            <a href="/annual-reports.html" class="px-4 py-2 text-gray-700 hover:text-[#A62D37] hover:bg-gray-50 rounded-md transition-colors">Annual Reports</a>
+            <a href="/contact.html" class="px-4 py-2 bg-[#A62D37] text-white rounded-md hover:bg-[#8B2530] transition-colors">Contact</a>
+          </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden pb-4">
+          <div class="flex flex-col space-y-2">
+            <a href="/" class="px-4 py-2 text-[#A62D37] font-semibold bg-gray-50 rounded-md">Home</a>
+            <a href="/about.html" class="px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md">About</a>
+            <a href="/programmes.html" class="px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Programmes</a>
+            <a href="/annual-reports.html" class="px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Annual Reports</a>
+            <a href="/contact.html" class="px-4 py-2 bg-[#A62D37] text-white rounded-md text-center">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="flex-grow">
+      <!-- Hero Section -->
+      <section class="bg-gradient-to-br from-[#A62D37] to-[#8B2530] text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div class="max-w-3xl">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              Building Confidence, Skills, and Futures
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-100 leading-relaxed">
+              Supporting autistic people and people with learning disabilities in Perth & Kinross to develop work skills and achieve their potential.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="/programmes.html" class="inline-block bg-white text-[#A62D37] px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center">
+                Our Programmes
+              </a>
+              <a href="/contact.html" class="inline-block bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-[#A62D37] transition-colors text-center">
+                Get in Touch
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission Statement -->
+      <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Mission</h2>
+            <p class="text-xl text-gray-700 leading-relaxed">
+              Check-In Works provides tailored training and support to help autistic people and people with learning disabilities gain valuable work experience, build confidence, and develop skills for independent living and employment.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Impact Stats -->
+      <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Our Impact</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-sm text-center">
+              <div class="text-5xl font-bold text-[#A62D37] mb-4">50+</div>
+              <div class="text-xl font-semibold text-gray-900 mb-2">Trainees Supported</div>
+              <p class="text-gray-600">Individuals helped each year through our programmes</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-sm text-center">
+              <div class="text-5xl font-bold text-[#A62D37] mb-4">95%</div>
+              <div class="text-xl font-semibold text-gray-900 mb-2">Increased Confidence</div>
+              <p class="text-gray-600">Of trainees report improved self-confidence</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-sm text-center">
+              <div class="text-5xl font-bold text-[#A62D37] mb-4">30+</div>
+              <div class="text-xl font-semibold text-gray-900 mb-2">Partner Organizations</div>
+              <p class="text-gray-600">Working together to support our community</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trainee Quotes -->
+      <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">What Our Trainees Say</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-gray-50 p-8 rounded-xl">
+              <div class="flex items-center mb-6">
+                <img src="/images/trainee-quotes/Andrew.png" alt="Andrew" class="w-16 h-16 rounded-full object-cover" />
+                <div class="ml-4">
+                  <div class="font-semibold text-gray-900">Andrew</div>
+                  <div class="text-sm text-gray-600">Trainee</div>
+                </div>
+              </div>
+              <p class="text-gray-700 italic leading-relaxed">
+                "Check-In Works has helped me gain confidence in my abilities and develop skills I never thought I could master. The support from the team has been incredible."
+              </p>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-xl">
+              <div class="flex items-center mb-6">
+                <img src="/images/trainee-quotes/Martin.png" alt="Martin" class="w-16 h-16 rounded-full object-cover" />
+                <div class="ml-4">
+                  <div class="font-semibold text-gray-900">Martin</div>
+                  <div class="text-sm text-gray-600">Trainee</div>
+                </div>
+              </div>
+              <p class="text-gray-700 italic leading-relaxed">
+                "I've learned so many practical skills here. The staff understand my needs and help me work at my own pace. It's been life-changing."
+              </p>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-xl">
+              <div class="flex items-center mb-6">
+                <img src="/images/trainee-quotes/Steven.png" alt="Steven" class="w-16 h-16 rounded-full object-cover" />
+                <div class="ml-4">
+                  <div class="font-semibold text-gray-900">Steven</div>
+                  <div class="text-sm text-gray-600">Trainee</div>
+                </div>
+              </div>
+              <p class="text-gray-700 italic leading-relaxed">
+                "The training programme has given me real work experience and helped me understand what I'm capable of. I'm now working towards independent employment."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Image Gallery -->
+      <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Life at Check-In Works</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md">
+              <img src="/images/giraffe staff and trainees.jpg" alt="Giraffe staff and trainees" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md">
+              <img src="/images/trainees prepping food.jpg" alt="Trainees preparing food" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md">
+              <img src="/images/Giraffe Volunteers.jpg" alt="Giraffe volunteers" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md">
+              <img src="/images/Trainees Wellness Walk on Kinnoull Hill.jpg" alt="Trainees on wellness walk" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md">
+              <img src="/images/Giraffe trainees playing foot golf.jpg" alt="Trainees playing foot golf" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl shadow-md">
+              <img src="/images/hands in kitchen - giraffe trainees.jpg" alt="Trainees working in kitchen" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Partners -->
+      <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">Our Partners</h2>
+          <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            We work with amazing organizations across Perth & Kinross to provide the best support for our trainees
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+            <div class="flex justify-center p-4">
+              <img src="/images/partners-logos/pkavs-logo.svg" alt="PKAVS" class="max-h-16 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+            </div>
+            <div class="flex justify-center p-4">
+              <img src="/images/partners-logos/Perth autism support.jpg" alt="Perth Autism Support" class="max-h-16 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+            </div>
+            <div class="flex justify-center p-4">
+              <img src="/images/partners-logos/NHS Tayside.png" alt="NHS Tayside" class="max-h-16 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+            </div>
+            <div class="flex justify-center p-4">
+              <img src="/images/partners-logos/plusperth.png" alt="Plus Perth" class="max-h-16 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="py-20 bg-gradient-to-br from-[#A62D37] to-[#8B2530] text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Learn More?</h2>
+          <p class="text-xl mb-8 text-gray-100 max-w-2xl mx-auto">
+            Get in touch to find out how we can support you or someone you know, or how you can get involved with our work.
+          </p>
+          <a href="/contact.html" class="inline-block bg-white text-[#A62D37] px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+            Contact Us Today
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <div class="col-span-1 md:col-span-2">
+            <img src="/images/logos/Giraffe Logo white.svg" alt="Check-In Works" class="h-12 mb-4" />
+            <p class="text-gray-400 mb-4">
+              Supporting autistic people and people with learning disabilities in Perth & Kinross.
+            </p>
+            <div class="flex items-center space-x-2 mb-2">
+              <img src="/images/logos/Giraffe OSCR Logo.png" alt="OSCR Registered" class="h-12" />
+              <img src="/images/logos/DisabilityConfidentLeader-Giraffe.png" alt="Disability Confident Leader" class="h-12" />
+            </div>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-lg mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="/" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+              <li><a href="/about.html" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+              <li><a href="/programmes.html" class="text-gray-400 hover:text-white transition-colors">Programmes</a></li>
+              <li><a href="/annual-reports.html" class="text-gray-400 hover:text-white transition-colors">Annual Reports</a></li>
+              <li><a href="/contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-lg mb-4">Legal</h3>
+            <ul class="space-y-2">
+              <li><a href="/privacy.html" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+              <li><a href="/accessibility.html" class="text-gray-400 hover:text-white transition-colors">Accessibility</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+          <p>&copy; 2024 Check-In Works. Registered Scottish Charity. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
   </body>
 </html>
