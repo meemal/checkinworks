@@ -237,17 +237,32 @@ export default function Home({ onNavigate }: HomeProps) {
       </section>
 
       <section className="bg-gradient-to-br from-[#D99E6A] to-[#A66D3C] py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl p-10 shadow-2xl">
-            <blockquote className="text-2xl sm:text-3xl font-bold text-[#A62D37] mb-6 italic">
-              "We are the comfort blanket if our trainees ever need it."
-            </blockquote>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Read how Steve moved from zero experience to paid work, new roles and an ongoing connection with us.
-            </p>
-            <Button onClick={() => onNavigate('/about')}>
-              Read Steve's story
-            </Button>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="order-2 md:order-1">
+              <div className="bg-white rounded-2xl p-10 shadow-2xl">
+                <h2 className="text-3xl font-bold text-[#A62D37] mb-6">Jackie's Story</h2>
+                <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                  Jackie joined Giraffe as a trainee many years ago and has gone on to achieve lots of great things in her life, despite facing several challenges along the way. Jackie now volunteers for Giraffe, providing invaluable support and advice to our team.
+                </p>
+                <blockquote className="text-xl font-bold text-[#A62D37] mb-4 italic border-l-4 border-[#A62D37] pl-4">
+                  "I have always felt included and valued at Giraffe. People play different roles in the organisation, but there is no hierarchy of importance."
+                </blockquote>
+                <blockquote className="text-xl font-bold text-[#A62D37] mb-6 italic border-l-4 border-[#A62D37] pl-4">
+                  "It's nice to know that you always have that support in the background if you ever need it."
+                </blockquote>
+                <Button onClick={() => onNavigate('/about')}>
+                  Read more stories
+                </Button>
+              </div>
+            </div>
+            <div className="order-1 md:order-2">
+              <img
+                src="/images/Jackie - Giraffe Training.png"
+                alt="Jackie - Giraffe volunteer and former trainee"
+                className="rounded-2xl shadow-2xl w-full h-auto object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
