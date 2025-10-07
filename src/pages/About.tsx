@@ -22,10 +22,13 @@ export default function About({ onNavigate }: AboutProps) {
                 Supporting inclusion
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-   Our primary aim is to support autistic people and people with learning disabilities to move towards inclusion, socialisation, attainment, realising their own potential and, if appropriate, into meaningful work. We achieve this through a person-centred programme of life skills, team building, accredited training, supported work experience, goal setting, wellbeing activities and social activities. W
+   Our primary aim is to support autistic people and people with learning disabilities to move towards inclusion, socialisation, attainment, realising their own potential and, if appropriate, into meaningful work. 
+                 </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                We achieve this through a person-centred programme of life skills, team building, accredited training, supported work experience, goal setting, wellbeing activities and social activities.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-           e focus on overlooked aspects, such as confidence building, which enables our trainees to move their lives forward as well as being an active and included part in our local communities.
+           We focus on overlooked aspects, such as confidence building, which enables our trainees to move their lives forward as well as being an active and included part in our local communities.
               </p>
             </div>
             <div className="rounded-xl overflow-hidden shadow-2xl">
