@@ -27,7 +27,7 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
             className="hover:opacity-80 transition-opacity"
           >
             <img
-              src="/images/logos/Checkin-works-logo.svg"
+              src="/images/logos/Checkin-works-logo-h.svg"
               alt="Check-In Works"
               className="h-24"
             />
