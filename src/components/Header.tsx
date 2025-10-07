@@ -44,12 +44,12 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
               </button>
             ))}
             <a
-              href="https://giraffekitchen.co.uk"
+              href="https://www.giraffe-trading.co.uk/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1 px-4 py-2 bg-[#035AA6] text-white rounded-lg hover:bg-[#024a8a] transition-colors text-sm font-medium"
             >
-              Giraffe Kitchen
+              Giraffe Trading
               <ExternalLink size={14} />
             </a>
           </nav>
@@ -89,7 +89,7 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-3 bg-[#035AA6] text-white rounded-lg hover:bg-[#024a8a] transition-colors"
             >
-              Visit Giraffe Kitchen
+              Visit Giraffe Trading
               <ExternalLink size={16} />
             </a>
           </nav>
