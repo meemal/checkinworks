@@ -74,7 +74,7 @@ export default function About({ onNavigate }: AboutProps) {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="rounded-xl overflow-hidden shadow-2xl">
               <img
-                src="/images/Giraffe Trading.jpg"
+                src="/images/logos/Giraffe Logo.svg"
                 alt="Giraffe Trading - our social enterprise partner"
                 className="w-full h-full object-cover"
               />
