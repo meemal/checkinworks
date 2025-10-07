@@ -92,31 +92,32 @@ const partners = [
 export default function Home({ onNavigate }: HomeProps) {
   return (
     <div className="min-h-screen">
-      <section className="relative text-white py-24 px-4 sm:px-6 lg:px-8">
+      <section className="relative text-white py-24 px-4 sm:px-6 lg:px-8 min-h-[600px] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: 'url(/images/trainees prepping food.jpg)' }}
+          style={{ backgroundImage: 'url(/images/hands in kitchen - giraffe trainees.jpg)' }}
         ></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-[#A62D37]/40 via-[#8a2530]/65 to-[#A62D37]/90"></div>
         <div className="relative max-w-5xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Supporting people to realise their own potential
-          </h1>
-          <p className="text-lg sm:text-xl mb-10 max-w-3xl mx-auto leading-relaxed opacity-95">
-            We help autistic people and people with learning disabilities to build skills, confidence and meaningful connections. Our programmes include life skills, accredited training, supported work experience and wellbeing activities in Perth and Kinross and beyond.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://www.giraffe-trading.co.uk/referral-form"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#A62D37] text-white rounded-lg hover:bg-[#8a2530] transition-all duration-200 font-semibold text-lg shadow-lg hover:shadow-xl"
-            >
-              Make a referral
-            </a>
-            <Button onClick={() => onNavigate('/annual-reports')} variant="tertiary" size="large">
-              Read our annual reports
-            </Button>
+          <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-8 sm:p-12">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-gray-900">
+              Supporting people to realise their own potential
+            </h1>
+            <p className="text-lg sm:text-xl mb-10 max-w-3xl mx-auto leading-relaxed text-gray-800">
+              We help autistic people and people with learning disabilities to build skills, confidence and meaningful connections. Our programmes include life skills, accredited training, supported work experience and wellbeing activities in Perth and Kinross and beyond.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://www.giraffe-trading.co.uk/referral-form"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#A62D37] text-white rounded-lg hover:bg-[#8a2530] transition-all duration-200 font-semibold text-lg shadow-lg hover:shadow-xl"
+              >
+                Make a referral
+              </a>
+              <Button onClick={() => onNavigate('/annual-reports')} variant="tertiary" size="large">
+                Read our annual reports
+              </Button>
+            </div>
           </div>
         </div>
       </section>
