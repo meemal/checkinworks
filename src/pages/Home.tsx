@@ -251,9 +251,7 @@ export default function Home({ onNavigate }: HomeProps) {
                 <blockquote className="text-xl font-bold text-[#A62D37] mb-6 italic border-l-4 border-[#A62D37] pl-4">
                   "It's nice to know that you always have that support in the background if you ever need it."
                 </blockquote>
-                <Button onClick={() => onNavigate('/about')}>
-                  Read more stories
-                </Button>
+           
               </div>
             </div>
             <div className="order-1 md:order-2">
