@@ -1,47 +1,78 @@
 import { useState } from 'react';
 import { MapPin, Phone, Mail, CheckCircle } from 'lucide-react';
 import Button from '../components/Button';
+import { supabase } from '../lib/supabase';
 
 interface ContactProps {
   onNavigate: (path: string) => void;
 }
 
 export default function Contact({}: ContactProps) {
+  const [formData, setFormData] = useState({
+    reason: '',
+    name: '',
+    organisation: '',
+    email: '',
+    phone: '',
+    message: '',
+    consent: false,
+  });
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState('');
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setError('');
 
-    const form = e.currentTarget;
-    const formData = new FormData(form);
-
     try {
-      const response = await fetch('https://formspree.io/f/mvgwbzaw', {
-        method: 'POST',
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
-      });
-
-      if (!response.ok) {
-        throw new Error('Form submission failed');
+      if (!supabase) {
+        throw new Error('Database connection not available');
       }
 
+      const { error: submitError } = await supabase
+        .from('contact_submissions')
+        .insert([{
+          reason: formData.reason,
+          name: formData.name,
+          organisation: formData.organisation || null,
+          email: formData.email,
+          phone: formData.phone || null,
+          message: formData.message,
+          consent: formData.consent,
+        }]);
+
+      if (submitError) throw submitError;
+
       setSubmitted(true);
-      form.reset();
       setTimeout(() => {
         setSubmitted(false);
-      }, 5000);
+        setFormData({
+          reason: '',
+          name: '',
+          organisation: '',
+          email: '',
+          phone: '',
+          message: '',
+          consent: false,
+        });
+      }, 3000);
     } catch (err) {
       setError('Failed to submit form. Please try again.');
       console.error('Form submission error:', err);
     } finally {
       setIsSubmitting(false);
+    }
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value, type } = e.target;
+    if (type === 'checkbox') {
+      const checked = (e.target as HTMLInputElement).checked;
+      setFormData(prev => ({ ...prev, [name]: checked }));
+    } else {
+      setFormData(prev => ({ ...prev, [name]: value }));
     }
   };
 
@@ -80,6 +111,8 @@ export default function Contact({}: ContactProps) {
                   <select
                     id="reason"
                     name="reason"
+                    value={formData.reason}
+                    onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#A62D37] focus:outline-none text-gray-900"
                   >
@@ -99,6 +132,8 @@ export default function Contact({}: ContactProps) {
                     type="text"
                     id="name"
                     name="name"
+                    value={formData.name}
+                    onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#A62D37] focus:outline-none text-gray-900"
                   />
@@ -112,6 +147,8 @@ export default function Contact({}: ContactProps) {
                     type="text"
                     id="organisation"
                     name="organisation"
+                    value={formData.organisation}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#A62D37] focus:outline-none text-gray-900"
                   />
                 </div>
@@ -124,6 +161,8 @@ export default function Contact({}: ContactProps) {
                     type="email"
                     id="email"
                     name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#A62D37] focus:outline-none text-gray-900"
                   />
@@ -137,6 +176,8 @@ export default function Contact({}: ContactProps) {
                     type="tel"
                     id="phone"
                     name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#A62D37] focus:outline-none text-gray-900"
                   />
                 </div>
@@ -148,6 +189,8 @@ export default function Contact({}: ContactProps) {
                   <textarea
                     id="message"
                     name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                     required
                     rows={6}
                     className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-[#A62D37] focus:outline-none text-gray-900 resize-none"
@@ -159,6 +202,8 @@ export default function Contact({}: ContactProps) {
                     type="checkbox"
                     id="consent"
                     name="consent"
+                    checked={formData.consent}
+                    onChange={handleChange}
                     required
                     className="mt-1 w-5 h-5 text-[#A62D37] border-gray-300 rounded focus:ring-[#A62D37]"
                   />
