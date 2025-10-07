@@ -24,7 +24,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                 onClick={() => onNavigate('/impact')}
                 className="text-sm text-gray-300 hover:text-white transition-colors text-left"
               >
-                Impact & Reports
+                Annual Reports
               </button>
               <button
                 onClick={() => onNavigate('/contact')}
