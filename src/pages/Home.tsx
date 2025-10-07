@@ -97,7 +97,7 @@ export default function Home({ onNavigate }: HomeProps) {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: 'url(/images/trainees prepping food.jpg)' }}
         ></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-[#A62D37]/90 via-[#8a2530]/85 to-[#A62D37]/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#A62D37]/40 via-[#8a2530]/65 to-[#A62D37]/90"></div>
         <div className="relative max-w-5xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
             Supporting people to realise their own potential
