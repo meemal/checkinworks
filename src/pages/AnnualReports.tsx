@@ -54,19 +54,12 @@ export default function AnnualReports({ onNavigate }: AnnualReportsProps) {
             Funders and partners can access our most recent documents here.
           </p>
           <div className="space-y-4">
-            <div className="bg-white border-2 border-gray-200 rounded-lg p-6 flex items-center justify-between hover:border-[#A62D37] transition-colors">
-              <div className="flex items-center gap-4">
-                <Download size={32} className="text-[#A62D37]" />
-                <div>
-                  <h3 className="font-bold text-lg text-gray-900">Annual Report and Accounts 2024-25</h3>
-                  <p className="text-sm text-gray-600">PDF Document</p>
-                </div>
-              </div>
-              <button className="px-6 py-2 bg-[#A62D37] text-white rounded-lg hover:bg-[#8a2530] transition-colors font-semibold">
-                Download
-              </button>
-            </div>
-            <div className="bg-white border-2 border-gray-200 rounded-lg p-6 flex items-center justify-between hover:border-[#A62D37] transition-colors">
+            <a
+              href="/files/Checkin Final Accounts 2023-24.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white border-2 border-gray-200 rounded-lg p-6 flex items-center justify-between hover:border-[#A62D37] transition-colors"
+            >
               <div className="flex items-center gap-4">
                 <Download size={32} className="text-[#A62D37]" />
                 <div>
@@ -74,22 +67,27 @@ export default function AnnualReports({ onNavigate }: AnnualReportsProps) {
                   <p className="text-sm text-gray-600">PDF Document</p>
                 </div>
               </div>
-              <button className="px-6 py-2 bg-[#A62D37] text-white rounded-lg hover:bg-[#8a2530] transition-colors font-semibold">
+              <span className="px-6 py-2 bg-[#A62D37] text-white rounded-lg hover:bg-[#8a2530] transition-colors font-semibold">
                 Download
-              </button>
-            </div>
-            <div className="bg-white border-2 border-gray-200 rounded-lg p-6 flex items-center justify-between hover:border-[#A62D37] transition-colors">
+              </span>
+            </a>
+            <a
+              href="/files/Checkin Accounts 2022-23.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white border-2 border-gray-200 rounded-lg p-6 flex items-center justify-between hover:border-[#A62D37] transition-colors"
+            >
               <div className="flex items-center gap-4">
                 <Download size={32} className="text-[#A62D37]" />
                 <div>
-                  <h3 className="font-bold text-lg text-gray-900">Previous years archive</h3>
-                  <p className="text-sm text-gray-600">PDF Documents</p>
+                  <h3 className="font-bold text-lg text-gray-900">Annual Report and Accounts 2022-23</h3>
+                  <p className="text-sm text-gray-600">PDF Document</p>
                 </div>
               </div>
-              <button className="px-6 py-2 bg-[#A62D37] text-white rounded-lg hover:bg-[#8a2530] transition-colors font-semibold">
+              <span className="px-6 py-2 bg-[#A62D37] text-white rounded-lg hover:bg-[#8a2530] transition-colors font-semibold">
                 Download
-              </button>
-            </div>
+              </span>
+            </a>
           </div>
         </div>
       </section>
