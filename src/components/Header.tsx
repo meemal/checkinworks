@@ -5,7 +5,7 @@ import type { NavigationItem } from '../types';
 const navigation: NavigationItem[] = [
   { label: 'Home', path: '/' },
   { label: 'About', path: '/about' },
-  { label: 'Our Programmes', path: '/programmes' },
+  { label: 'Our Programme', path: '/programmes' },
   { label: 'Annual Reports', path: '/annual-reports' },
   { label: 'Contact', path: '/contact' },
 ];
