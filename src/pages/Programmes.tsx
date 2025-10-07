@@ -60,7 +60,7 @@ export default function Programmes({ onNavigate }: ProgrammesProps) {
                 Who can take part
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Adults and young people from 14 upwards, primarily in Perth and Kinross. We also accept referrals from neighbouring areas when practical.
+                Adults and young people from 16 upwards, primarily in Perth and Kinross. We also accept referrals from neighbouring areas when practical.
               </p>
             </div>
             <div className="rounded-xl overflow-hidden shadow-2xl">
