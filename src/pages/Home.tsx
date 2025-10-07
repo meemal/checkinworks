@@ -389,54 +389,48 @@ export default function Home() {
             Get Involved
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white border-2 border-gray-200 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
-              <div className="bg-gradient-to-br from-[#035AA6] to-[#024a8a] text-white p-8">
-                <UserPlus size={56} className="mb-6" />
-                <h3 className="text-2xl font-bold mb-4">Make a referral or self-refer</h3>
-                <p className="leading-relaxed mb-6">
-                  Use our simple form to tell us about the person and their goals. We will get back to you to discuss next steps.
-                </p>
-                <a
-                  href="https://www.giraffe-trading.co.uk/referral-form"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-6 py-3 bg-white text-[#035AA6] border-2 border-[#035AA6] rounded-lg hover:bg-[#035AA6] hover:text-white transition-all duration-200 font-semibold shadow-md hover:shadow-lg"
-                >
-                  Make a referral
-                </a>
-              </div>
+            <div className="bg-gradient-to-br from-[#035AA6] to-[#024a8a] text-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow flex flex-col p-8">
+              <UserPlus size={56} className="mb-6" />
+              <h3 className="text-2xl font-bold mb-4">Make a referral or self-refer</h3>
+              <p className="leading-relaxed mb-6 flex-grow">
+                Use our simple form to tell us about the person and their goals. We will get back to you to discuss next steps.
+              </p>
+              <a
+                href="https://www.giraffe-trading.co.uk/referral-form"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-6 py-3 bg-white text-[#035AA6] border-2 border-white rounded-lg hover:bg-[#f0f0f0] hover:border-[#f0f0f0] transition-all duration-200 font-semibold shadow-md hover:shadow-lg"
+              >
+                Make a referral
+              </a>
             </div>
 
-            <div className="bg-white border-2 border-gray-200 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
-              <div className="bg-gradient-to-br from-[#A66D3C] to-[#8a5730] text-white p-8">
-                <Heart size={56} className="mb-6" />
-                <h3 className="text-2xl font-bold mb-4">Support our work</h3>
-                <p className="leading-relaxed mb-6">
-                  Your funding helps people build confidence, learn new skills and move forward. We welcome conversations with trusts, foundations, businesses and individuals.
-                </p>
-                <a
-                  href="/contact"
-                  className="inline-flex items-center justify-center px-6 py-3 bg-white text-[#A66D3C] border-2 border-[#A66D3C] rounded-lg hover:bg-[#A66D3C] hover:text-white transition-all duration-200 font-semibold shadow-md hover:shadow-lg"
-                >
-                  Start a conversation
-                </a>
-              </div>
+            <div className="bg-gradient-to-br from-[#A66D3C] to-[#8a5730] text-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow flex flex-col p-8">
+              <Heart size={56} className="mb-6" />
+              <h3 className="text-2xl font-bold mb-4">Support our work</h3>
+              <p className="leading-relaxed mb-6 flex-grow">
+                Your funding helps people build confidence, learn new skills and move forward. We welcome conversations with trusts, foundations, businesses and individuals.
+              </p>
+              <a
+                href="/contact"
+                className="inline-flex items-center justify-center px-6 py-3 bg-white text-[#A66D3C] border-2 border-white rounded-lg hover:bg-[#f0f0f0] hover:border-[#f0f0f0] transition-all duration-200 font-semibold shadow-md hover:shadow-lg"
+              >
+                Start a conversation
+              </a>
             </div>
 
-            <div className="bg-white border-2 border-gray-200 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
-              <div className="bg-gradient-to-br from-[#A62D37] to-[#8a2530] text-white p-8">
-                <HandHeart size={56} className="mb-6" />
-                <h3 className="text-2xl font-bold mb-4">Volunteer with us</h3>
-                <p className="leading-relaxed mb-6">
-                  We keep a small pool of volunteers for specific roles. If you would like to help, please share your interests and availability.
-                </p>
-                <a
-                  href="/contact"
-                  className="inline-flex items-center justify-center px-6 py-3 bg-white text-[#A62D37] border-2 border-[#A62D37] rounded-lg hover:bg-[#A62D37] hover:text-white transition-all duration-200 font-semibold shadow-md hover:shadow-lg"
-                >
-                  Register interest
-                </a>
-              </div>
+            <div className="bg-gradient-to-br from-[#A62D37] to-[#8a2530] text-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow flex flex-col p-8">
+              <HandHeart size={56} className="mb-6" />
+              <h3 className="text-2xl font-bold mb-4">Volunteer with us</h3>
+              <p className="leading-relaxed mb-6 flex-grow">
+                We keep a small pool of volunteers for specific roles. If you would like to help, please share your interests and availability.
+              </p>
+              <a
+                href="/contact"
+                className="inline-flex items-center justify-center px-6 py-3 bg-white text-[#A62D37] border-2 border-white rounded-lg hover:bg-[#f0f0f0] hover:border-[#f0f0f0] transition-all duration-200 font-semibold shadow-md hover:shadow-lg"
+              >
+                Register interest
+              </a>
             </div>
           </div>
         </div>
