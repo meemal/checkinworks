@@ -24,9 +24,13 @@ export default function Header({ currentPath, onNavigate }: HeaderProps) {
         <div className="flex justify-between items-center py-4">
           <button
             onClick={() => onNavigate('/')}
-            className="text-2xl font-bold text-[#A62D37] hover:opacity-80 transition-opacity"
+            className="hover:opacity-80 transition-opacity"
           >
-            Check-In Works
+            <img
+              src="/images/logos/Checkin-works-logo.svg"
+              alt="Check-In Works"
+              className="h-12"
+            />
           </button>
 
           <nav className="hidden lg:flex items-center gap-6">
