@@ -198,7 +198,7 @@ export default function Contact({ onNavigate }: ContactProps) {
                   <Phone size={24} className="text-[#A62D37] flex-shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-gray-900">Phone</p>
-                    <p className="text-gray-700">01738 123456</p>
+                    <p className="text-gray-700">01738 449227</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
