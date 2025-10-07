@@ -273,7 +273,19 @@ export default function Home({ onNavigate }: HomeProps) {
           <p className="text-lg text-gray-700 mb-8 leading-relaxed">
             Giraffe Trading is our community interest company - this trading activity provides the supported and professional work experience opportunities and helps fund our social purpose.
           </p>
-         
+          <a
+            href="https://www.giraffe-trading.co.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block transition-transform hover:scale-105"
+            aria-label="Visit Giraffe Trading website - opens in new window"
+          >
+            <img
+              src="/images/logos/Giraffe Logo.svg"
+              alt="Giraffe Trading - Social Enterprise Partner"
+              className="max-h-32 mx-auto object-contain"
+            />
+          </a>
         </div>
       </section>
 
