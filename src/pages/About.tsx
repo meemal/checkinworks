@@ -43,6 +43,14 @@ export default function About({ onNavigate }: AboutProps) {
       </section>
 
       <section className="bg-gradient-to-br from-[#ADD1D9] to-white py-20 px-4 sm:px-6 lg:px-8">
+        <div className="rounded-xl overflow-hidden shadow-2xl">
+              <img
+                src="/images/Giraffe trainees playing foot golf.jpg"
+                alt="Giraffe trainees playing foot golf"
+                className="w-full h-full object-cover"
+              />
+            </div>
+        
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-900">
             What a typical journey can look like
